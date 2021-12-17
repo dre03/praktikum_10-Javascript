@@ -1,0 +1,44 @@
+es (35 sloc)  1.08 KB
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        .tab{
+            margin: auto;
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h2>HITUNG KURS RUPIAH</h2>
+        <table class="tab">
+            <tr>
+                <th>Masukan uang</th>
+                <th>Mata Uang</th>
+                <th>Hasil</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="nilai" onchange="uang()"></td>
+                <td><button id="jenis" value="Dollar US">Dollar US</button></td>
+                <td><input type="text" id="hasil"></td>
+            </tr>
+        </table>
+</body>
+<script>
+    function uang(){
+        if(jenis.value == "Dollar US"){
+            let input = Number(document.getElementById("nilai").value);
+            let hitung = input * 14950;
+            document.getElementById("hasil").value = "Rp. " +hitung 
+        }
+    }
+</script>
+</html>

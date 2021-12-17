@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .satu{
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="satu">Menghitung Jumlah-Dua Bilangan</h2>
+    <form class="satu">
+        <input type="text" id="angka1"  onchange="hitung()"><br>
+        <b>+</b><br>
+        <input type="text" id="angka2"  onchange="hitung()"><br>
+        <b>=</b><br>
+        <input type="text" id="hasil">
+    </form>
+    <script>
+        function hitung(){
+            let a = Number(document.getElementById("angka1").value);
+            let b = Number(document.getElementById("angka2").value);
+            let hasil = a + b;
+            document.getElementById("hasil").value=hasil
+        }
+    </script>
+</body>
+</html>
